@@ -1,0 +1,110 @@
+/* 1. define global variables for sheet */
+:root{
+  --base-clr: #11121a;
+  --body-clr: #0c0f25;
+  --line-clr: #42434a;
+  --hover-clr: #222533;
+  --text-clr: #e6e6ef;
+  --accent-clr: #5e63ff;
+  --secondary-clr: #b0b3c1;
+}
+
+/* 2. initialize settings */
+*{
+  margin: 0;
+  padding: 0;
+
+}
+html{
+  font-family: Poppins;
+  line-height: 1.5rem; /* WHAT IS THIS: ___________ */
+}
+
+body{
+  min-height: 100vh; /* vh = viewport height  */
+  min-height: 100dvh; /* VH vs DVH ?  */
+  background-color: var(--base-clr); /* reference color variables */
+  color: var(--text-clr); /* reference color variables */
+  display: grid;
+  grid-template-rows: auto 1fr ; /* responsive design; sidebar will scale as large as it needs to be  */
+  grid-template-areas:
+    "title"
+    "filler-art";
+}
+
+.titlecontainer { /* # targets IDs */
+  /* box-sizing: border-box; */
+  grid-area: title;
+  height: 125px;
+  width: 100vh;
+  padding: 5px 1em;  /* top+bottom , left+right */
+  background-color: var(--base-clr);
+  border: 1px solid var(--line-clr);
+
+  position: sticky; /* HOLD item in place as the user SCROLLS */
+  align-self: start; /* sets the "sticking position" to the top of the page  */
+  /*position: fixed; /*This puts sidebar on a different stacking context */
+}
+
+ul{ /* applies to all uls   */
+  list-style: none; /* remove bullet points */
+}
+
+.title-box{
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* justify-content: space-evenly; spaced from edges */
+  gap: 5px;
+  flex-direction: row; /* normal */
+}
+
+#title1{
+  font-size: 20px;
+}
+
+#title2{
+  font-size: 60px;
+}
+
+#title3{
+  font-size: 40px;
+}
+
+.navbar{
+  height: 100px;
+  list-style: none; /* remove bullet points */
+  padding: 20px 1em;  /* top+bottom , left+right */
+  background: linear-gradient(to bottom, var(--base-clr), var(--body-clr));
+}
+
+
+.navbar-btns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly; /*spaced from edges*/
+  gap: 20px;
+  flex-direction: row; /* normal */
+}
+
+.explore-btn, .wikigame-btn, .filter-btn{
+  border-color: #e6e6ef;
+  border-radius: .5em;
+  background-color: var(--base-clr);
+  color:white;
+
+  display: flex;
+  justify-content: center; /* Horizontal alignment */
+  align-items: center;    /* Vertical alignment */
+  height: 100%;
+  padding: 3px;
+}
+
+.filler-art{
+  grid-area: filler-art;
+  background-color: var(--body-clr);
+  text-align: center;
+  /* text-align: ; */
+}

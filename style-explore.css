@@ -1,0 +1,9 @@
+#gradient-box{
+  height: 100px;
+  /* width:100vh; */
+  background: linear-gradient(to bottom, var(--base-clr), var(--body-clr));
+}
+
+#explore-page-box{
+  height:100px;
+}
