@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+
+body{
+  grid-template-columns: auto;
+  grid-template-rows: auto auto 1fr;
+  grid-template-areas:
+    "title"
+    "featured-art"
+    "related-images";
+}
+
+.title-container {
+  grid-area: title;
+}
+
 #gradient-box{
   height: 100px;
   /* width:100vh; */
@@ -6,4 +21,91 @@
 
 #explore-page-box{
   height:100px;
+}
+
+#title2{
+  font-family: "Lacquer", system-ui;
+  margin-left: 20px;
+  font-size: 50px;
+  font-weight: 100;
+}
+
+.featured-art{
+  grid-area: featured-art;
+  /* border: solid white 3px; */
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  background-color: var(--body-clr);
+}
+
+.feature-piece-container{
+  display: flex;
+  height: auto;
+  width: auto;
+  border: solid grey 40px;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 3%;
+}
+
+.feature-piece-window{
+  display: flex;
+  height: 80%;
+  width: auto;
+  /* border: solid white 3px; */
+  justify-content: space-around;
+  justify-content: center;
+  align-content: center;
+}
+
+.featured-art-piece{
+  max-height: 350px;
+  min-height: 200px;
+}
+
+.dataplate{
+  font: black;
+  margin-right: 20px;
+  margin-left: 20px;
+  width: 20%;
+  height: auto;
+  /* border: solid white 3px; */
+}
+
+.lower-portion{
+  /* border: solid white 3px; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--body-clr);
+  /* width: 100vh; */
+}
+
+.related-images-container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 70%;
+  flex-direction: row; /* normal */
+  flex-wrap: wrap;
+  gap: 10px;
+
+}
+
+.image-box{
+  /* border: solid 10px lightgrey; */
+  flex-shrink: 1;
+  display: flex;
+
+
+  font-size: 40pt;
+  margin: 20px;
+}
+
+img{
+
+  max-height: 200px;
+  border: solid 10px lightgrey;
 }

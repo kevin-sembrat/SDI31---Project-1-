@@ -1,7 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&display=swap');
+
+
 /* 1. define global variables for sheet */
 :root{
   --base-clr: #11121a;
-  --body-clr: #0c0f25;
+  --body-clr: #0a0f35;
   --line-clr: #42434a;
   --hover-clr: #222533;
   --text-clr: #e6e6ef;
@@ -16,7 +20,6 @@
 
 }
 html{
-  font-family: Poppins;
   line-height: 1.5rem; /* WHAT IS THIS: ___________ */
 }
 
@@ -61,15 +64,20 @@ ul{ /* applies to all uls   */
 }
 
 #title1{
-  font-size: 20px;
+  /* font-size: 40px; */
+  /* height: 80px; */
+  margin-right: 10px;
 }
 
 #title2{
-  font-size: 60px;
+  font-family: "Meow Script", cursive;
+  font-weight: 100;
+  font-size: 65px;
 }
 
 #title3{
   font-size: 40px;
+  margin-left: 5px;
 }
 
 .navbar{
@@ -105,6 +113,6 @@ ul{ /* applies to all uls   */
 .filler-art{
   grid-area: filler-art;
   background-color: var(--body-clr);
-  text-align: center;
+  /* text-align: center; */
   /* text-align: ; */
 }
