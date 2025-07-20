@@ -97,7 +97,7 @@ ul{ /* applies to all uls   */
   flex-direction: row; /* normal */
 }
 
-.explore-btn, .wikigame-btn, .filter-btn{
+.explore-btn, .wikigame-btn, .filter-btn, .home-btn{
   border-color: #e6e6ef;
   border-radius: .5em;
   background-color: var(--base-clr);
