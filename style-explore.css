@@ -61,6 +61,7 @@ body{
 .feature-piece-window{
   display: flex;
   height: 80%;
+  min-height: auto;
   width: auto;
   /* border: solid white 3px; */
   justify-content: space-around;
@@ -68,9 +69,9 @@ body{
   align-content: center;
 }
 
-.featured-art-piece{
+.feature-art-piece{
   max-height: 350px;
-  min-height: 200px;
+  /* min-height: 300px; */
 }
 
 .dataplate{
@@ -99,6 +100,7 @@ body{
   flex-direction: row; /* normal */
   flex-wrap: wrap;
   gap: 10px;
+  height: auto;
 
 }
 
